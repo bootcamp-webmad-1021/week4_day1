@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <script>
+
+            //Merge arrays
+            const reptiles = ['snake', 'lizard', 'alligator'];
+            const mammals = ['puppy', 'kitten', 'bunny'];
+
+
+            // // ES5 approach with concat:
+
+            // const animals = reptiles.concat(mammals);
+
+            // console.log(animals);
+            // [ 'snake', 'lizard', 'alligator', 'puppy', 'kitten', 'bunny' ]
+
+
+            // ES6 approach using rest operator:
+
+            // const animals = [...mammals, ...reptiles];
+
+            // console.log(animals);
+            // [ 'puppy', 'kitten', 'bunny', 'snake', 'lizard', 'alligator' ]
+
+
+            // // ES5 Approach COPY ARRAYS
+            // const names = ['ana', 'milo', 'ivan'];
+            // const names2 = names.slice();
+
+            // console.log(names2); // => [ 'ana', 'milo', 'ivan' ]
+
+
+            // // ES6 Approach Spread operator
+            // const names = ['ana', 'milo', 'ivan'];
+            // const names3 = [...names];
+
+            // console.log(names3); // => [ 'ana', 'milo', 'ivan' ]
+
+
+            // //Rest parameter en funciones
+            // function myFunction(arg1, arg2, ...restArgs) {
+            //     console.log(arg1);
+            //     console.log(arg2);
+            //     console.log(restArgs)
+            // }
+
+            // myFunction('first argument', 'second argument', 'third argument');
+
+
+
+            //Objeto Arguments 
+            // function add() {
+            //     console.log("los argumentos", arguments)
+            //     let sum = 0;
+            //     for (let i = 0; i < arguments.length; i++) {
+            //         sum += arguments[i];
+            //     }
+            //     return sum;
+            // }
+
+            // console.log(add()); // 0
+            // console.log(add(1)); // 1
+            // console.log(add(1, 2, 5, 8)) // 16
+
+
+
+
+            //Rest parameter add
+
+            // function add(...numbers) {
+            //     return numbers.reduce((sum, next) => {
+            //         return sum + next;
+            //     }, 0);
+            // }
+
+            // const total = add(1, 2, 5, 12, 23, 8); // <== 16
+            // console.log(total)
+
+        </script>
+    </body>
+
+</html>

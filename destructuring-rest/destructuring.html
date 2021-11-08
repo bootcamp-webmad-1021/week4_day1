@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <script>
+
+
+            ////////////Destructuring Objects
+
+            //Object with info
+            let person = {
+                name: 'Ironhacker',
+                age: 25,
+                favoriteMusic: 'Metal',
+            };
+
+
+
+
+            // // Primera versión
+            // let name = person.name;
+            // let age = person.age;
+            // let favoriteMusic = person.favoriteMusic;
+
+            // // Deconstruyendo línea a línea
+            // let { name } = person
+            // let { age } = person
+            // let { favoriteMusic } = person
+
+            // // Deconstruyendo en una sola línea con un valor por defecto para country
+            // let { name, age, favoriteMusic, country = "Spain" } = person
+
+
+
+            // // Deconstruyendo y renombrando variable a fullName
+            // const { name: fullName, age, favoriteMusic } = person;
+            // console.log(`Hello, ${fullName}.`); // => Hello, Ironhacker.
+
+
+
+
+            //NESTED Properties
+
+            // const person = {
+            //     name: 'Ironhacker',
+            //     age: 25,
+            //     favoriteMusic: 'Metal',
+            //     address: {
+            //         street: 'Super Cool St',
+            //         number: 123,
+            //         city: 'Miami',
+            //     },
+            // };
+
+            // let {
+            //     name,
+            //     age,
+            //     favoriteMusic,
+            //     address: { street, number, city },
+            // } = person;
+
+            // console.log(`${name} lives in ${number} ${street}, city of ${city}.`);
+            // ==> Ironhacker lives in 123 Super Cool St, city of Miami.
+
+
+
+            // // Destructuring arrays
+            // const campuses = ['madrid', 'barcelona', 'miami'];
+
+            // const madrid = campuses[0]
+            // const barcelona = campuses[1]
+            // const miami = campuses[2]
+
+
+            // const [madrid, barcelona, miami] = campuses
+
+
+            // // NESTED arrays
+            const europeanCampuses = [
+                ['madrid', 'es'],
+                ['barcelona', 'es'],
+                ['berlin', 'de'],
+                ['paris', 'fr'],
+                ['amsterdam', 'nl'],
+                ['lisbon', 'pt'],
+            ];
+
+
+            // const [[campus1], , , , [campus4]] = europeanCampuses
+            // const [[campusSpain1], [campusSpain2, country], [campus5, theCountry]] = europeanCampuses;
+
+            // console.log(campusSpain1, campusSpain2, country, theCountry);
+            // ==> 'madrid' 'barcelona' 'es' 'de'
+
+            // console.log(campus1, campus4)
+
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "first-node-project",
+  "version": "1.0.0",
+  "description": "Firt node project webdev 1021",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Teo",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "faker": "^5.5.3"
+  }
+}
